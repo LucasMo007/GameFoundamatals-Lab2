@@ -353,8 +353,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1439304107
-  m_SortingLayer: 1
+  m_SortingLayerID: -1648264541
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 9abeeb677fdfc824eaf7cc7da560bb92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -498,12 +498,24 @@ PrefabInstance:
       value: meteorBrown_big4
       objectReference: {fileID: 0}
     - target: {fileID: 8165504866799594135, guid: 6879853d93c8706488c15c8fb08a5852, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165504866799594135, guid: 6879853d93c8706488c15c8fb08a5852, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165504866799594135, guid: 6879853d93c8706488c15c8fb08a5852, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165504866799594135, guid: 6879853d93c8706488c15c8fb08a5852, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.899979
+      value: -3.33
       objectReference: {fileID: 0}
     - target: {fileID: 8165504866799594135, guid: 6879853d93c8706488c15c8fb08a5852, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.16420007
+      value: -3.29
       objectReference: {fileID: 0}
     - target: {fileID: 8165504866799594135, guid: 6879853d93c8706488c15c8fb08a5852, type: 3}
       propertyPath: m_LocalPosition.z
@@ -574,6 +586,18 @@ PrefabInstance:
     - target: {fileID: 189258599799225150, guid: a29bb038405b2924da9d2316db1ac8af, type: 3}
       propertyPath: m_Name
       value: player-1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047082875333582967, guid: a29bb038405b2924da9d2316db1ac8af, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047082875333582967, guid: a29bb038405b2924da9d2316db1ac8af, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5392
+      objectReference: {fileID: 0}
+    - target: {fileID: 4047082875333582967, guid: a29bb038405b2924da9d2316db1ac8af, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5392
       objectReference: {fileID: 0}
     - target: {fileID: 4047082875333582967, guid: a29bb038405b2924da9d2316db1ac8af, type: 3}
       propertyPath: m_LocalPosition.x
