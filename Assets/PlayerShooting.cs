@@ -27,6 +27,10 @@ public class PlayerShooting : MonoBehaviour
         }
 
         timeuntilreloaded -= Time.deltaTime;
+        if(timeuntilreloaded <= 0)
+        {
+            timeuntilreloaded = 0;
+        }
 
 
     }

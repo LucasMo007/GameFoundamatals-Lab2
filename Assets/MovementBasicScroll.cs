@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class MovementBasicScroll : MonoBehaviour
 {
-    public float speed = 1.0f;
+    public float speed = 10f;
 
     // Start is called before the first frame update
     void Start()
