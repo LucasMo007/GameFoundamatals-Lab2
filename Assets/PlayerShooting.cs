@@ -23,14 +23,14 @@ public class PlayerShooting : MonoBehaviour
         {
             Instantiate(projectileprefab, transform.position, transform.rotation);
             float secondsPerShot = 1 / firerate;
-            timeuntilreloaded += secondsPerShot;
+            timeuntilreloaded = secondsPerShot;
         }
 
         timeuntilreloaded -= Time.deltaTime;
-        if(timeuntilreloaded <= 0)
+        /*if(timeuntilreloaded <= 0)
         {
             timeuntilreloaded = 0;
-        }
+        }*/
 
 
     }
