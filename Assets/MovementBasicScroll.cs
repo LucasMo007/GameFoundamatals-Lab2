@@ -21,7 +21,7 @@ public class MovementBasicScroll : MonoBehaviour
         //if 60 fps ,the rock movement 1m/s *1/60s * 60 =1m
         transform.position = transform.position+new Vector3(speed, 0,0)*DT;
 
-        if(transform.position.x > 10)
+        if(transform.position.x > 10 || transform.position.x <-10)
         {
             Destroy(gameObject);
         }
