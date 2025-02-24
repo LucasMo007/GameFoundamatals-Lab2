@@ -9,18 +9,14 @@ public class MovementPlayerInput : MonoBehaviour
 
     public Vector3 inputvector = Vector3.zero;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
         float XInput = Input.GetAxisRaw("Horizontal");
         float YInput = Input.GetAxisRaw("Vertical");
-        float DT= Time.deltaTime;
+        float DT = Time.deltaTime;
         inputvector = new Vector3 (XInput, YInput, 0);
         //if W is held alone,this vector will be (0,1,0),
         //for a velocity of (0,speed,0)
