@@ -6,11 +6,14 @@ using UnityEngine;
 public class MovementBasicScroll : MonoBehaviour
 {
     public float speed = 1f;
+    public float range = 18;
+
+    Vector3 StartPos;
 
     // Start is called before the first frame update
-    void Start()
+    private void Start()
     {
-        
+        StartPos = transform.position;
     }
 
     // Update is called once per frame
@@ -21,10 +24,17 @@ public class MovementBasicScroll : MonoBehaviour
         //if 60 fps ,the rock movement 1m/s *1/60s * 60 =1m
         transform.position = transform.position+new Vector3(speed, 0,0)*DT;
 
-        if(transform.position.x > 10 || transform.position.x <-10)
+        Vector3 Currentpos = transform.position;
+        Vector3 displacement = Currentpos - StartPos;
+
+        if(displacement.magnitude > range )
         {
             Destroy(gameObject);
         }
+        /*if(transform.position.x > 10 || transform.position.x <-10)
+        {
+            Destroy(gameObject);
+        }*/
 
 
     }
