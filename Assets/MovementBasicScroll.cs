@@ -42,13 +42,13 @@ public class MovementBasicScroll : MonoBehaviour
             Destroy(gameObject);
         }
 
-        //Second way to destroy the object
+        //Second way to destroy the object using the distance between the start position and the current position
         /*if(displacement.magnitude > range )
         {
             Destroy(gameObject);
         }*/
 
-        //third way to destroy the object
+        //third way to destroy the object :useing the world position
         /*if(transform.position.x > 10 || transform.position.x <-10)
         {
             Destroy(gameObject);

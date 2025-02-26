@@ -48,31 +48,31 @@ public class PlayerShooting : MonoBehaviour
 void Update()
 {
 
-    // did we touch a powerup?
-    // test distance between player and powerup
+        // 
+        // test distance between player and powerup ,then destory the bullet far tha 0.5 meter
 
-    /*Vector3 PowerupPos = spreadPowerup.transform.position ;
-    Vector3 PlayerPos = transform.position;
+        /*Vector3 PowerupPos = spreadPowerup.transform.position ;
+        Vector3 PlayerPos = transform.position;
 
-    float distance = Vector3.Distance(PlayerPos,PowerupPos);
+        float distance = Vector3.Distance(PlayerPos,PowerupPos);
 
-    if (distance < 0.5f)
-    {
-        // we touched the powerup
-        // do something
-        shootMode = ShootModes.Spread;
-        Destroy(spreadPowerup);
-        spreadPowerup = null;
-    }
-    */
-
-
+        if (distance < 0.5f)
+        {
+            // we touched the powerup
+            // do something
+            shootMode = ShootModes.Spread;
+            Destroy(spreadPowerup);
+            spreadPowerup = null;
+        }
+        */
 
 
-    /* if (Input.GetButton ("shoot")) ;
-     Instantiate(projectileprefab,transform.position,transform.rotation);*/
 
-    istriggeredown = Input.GetButton("shoot");
+
+        /* if (Input.GetButton ("shoot")) ;
+         Instantiate(projectileprefab,transform.position,transform.rotation);*/
+
+        istriggeredown = Input.GetButton("shoot");
 
     if (Input.GetKeyDown(KeyCode.Alpha1))
     {
@@ -82,22 +82,24 @@ void Update()
     {
             shootMode = ShootModes.Spread;
     }
-        if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            shootMode = ShootModes.Rapid;
-        }
-        if (shootMode == ShootModes.Basic)
+    if (Input.GetKeyDown(KeyCode.Alpha3))
     {
-     BasicShootingBehaviour();
+            shootMode = ShootModes.Rapid;
+    }
+
+
+    if (shootMode == ShootModes.Basic)
+    {
+            BasicShootingBehaviour();
     }
     else if (shootMode == ShootModes.Spread)
     {
-    SpreadShootingBehaviour();
+            SpreadShootingBehaviour();
     }
-        else if (shootMode == ShootModes.Rapid)
-        {
+    else if (shootMode == ShootModes.Rapid)
+    {
             RapidShootingBehaviour();
-        }
+    }
 
         //if (Input.GetKeyDown(KeyCode.Alpha1))
         //{
