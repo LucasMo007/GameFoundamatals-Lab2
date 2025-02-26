@@ -23,11 +23,19 @@ public class PlayerShooting : MonoBehaviour
     }
         private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Powerup")
-        {   
-            shootMode = ShootModes.Spread;
-            Destroy(collision.gameObject);
-        }
+      
+             powerUp powerup = collision.GetComponent<powerUp>();// GetComonet is a function that will return the component of the type I selected
+                                                                 // powerup is a name ,it is vatiety :when the player collides with the things,
+                                                                 // it will get the powerup component
+
+        if (powerup != null) //if the player get the powerup component
+
+        {
+               shootMode = powerup.powerupShootMode;// the shootmode of player will be the powerupshootmode I selected in Unity.
+
+               Destroy(collision.gameObject);
+            }
+      
     }
 
 /*if(timeuntilreloaded <= 0)

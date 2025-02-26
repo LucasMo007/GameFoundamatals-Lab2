@@ -348,7 +348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833329247874484130, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: m_Name
-      value: PowerUp
+      value: PowerUp-Spread
       objectReference: {fileID: 0}
     - target: {fileID: 7332256194120426956, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: powerupShootMode
@@ -369,11 +369,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 934821186557763328, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.3824477
+      value: 4.91
       objectReference: {fileID: 0}
     - target: {fileID: 934821186557763328, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.4720707
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 934821186557763328, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: m_LocalPosition.z
@@ -409,7 +409,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833329247874484130, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: m_Name
-      value: PowerUp (2)
+      value: PowerUp -Basic
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -648,7 +648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3833329247874484130, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: m_Name
-      value: PowerUp (1)
+      value: PowerUp-Rapid
       objectReference: {fileID: 0}
     - target: {fileID: 7332256194120426956, guid: 488fcd0dda905df41b09596f42215231, type: 3}
       propertyPath: powerupShootMode
