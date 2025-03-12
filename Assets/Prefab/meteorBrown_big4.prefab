@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8165504866799594135}
   - component: {fileID: 7302558137392051988}
+  - component: {fileID: 5866136695026783217}
   m_Layer: 0
   m_Name: meteorBrown_big4
   m_TagString: Untagged
@@ -84,3 +85,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5866136695026783217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991545990115828267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb58de26b745494cb20bbfa174518ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
+  range: 18
+  distancetravelled: 0
